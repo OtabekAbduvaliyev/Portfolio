@@ -17,9 +17,8 @@
 
 <body style="background: var(--dark-mode, #191919);">
     <header id="home">
-        <nav>
+        <nav data-aos="fade-down" data-aos-duration="2000">
             <div class="nav_mw">
-
                 <img src="./images/Remove-bg.ai_1694864329122.png" alt="" style="max-width: 95px;">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -30,7 +29,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="myself">
+        <div class="myself" data-aos="zoom-in-down" data-aos-duration="2000">
             <p>Hi 👋,<br>
                 My name is <br>
                 <span>Otabek</span> <br>
@@ -39,7 +38,7 @@
             <img src="./images/photo_2023-09-16_15-14-43.jpg" alt="" width="100%" style="max-width: 349px; border-radius:50%;">
         </div>
     </header>
-    <section id="aboutme">
+    <section id="aboutme" data-aos="fade-right" data-aos-duration="3000">
 
         <div class="section__images">
             <img src="./images/photo_2023-09-16_15-14-43.jpg" alt="" class="section__images_img1" width="100%" style="border-radius: 20px; max-width: 500px;">
@@ -172,3 +171,10 @@
     <footer>
         <p>Designed and built by <span>Otabek</span> with <span>Love & Coffee</span></p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+    </body>
+    </html>
