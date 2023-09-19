@@ -14,8 +14,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(46, 53, 53);
-    z-index: 999;
+    background: var(--dark-mode, #191919);    z-index: 999;
     color: white;
     opacity: 0.8;
 
