@@ -4,13 +4,14 @@
     margin: 0%;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 nav {
     padding: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,7 +22,7 @@ nav {
 }
 
 .nav_mw {
-    /* text-align: center; */
+    text-align: center;
     align-items: center;
     max-width: 1200px;
     margin: auto;
@@ -31,14 +32,17 @@ nav {
     column-gap: 500px;
     row-gap: 50px;
 }
-
+.icons{
+    font-size: 2.8rem;
+    cursor: pointer;
+    display: none;
+}
 .nav_mw ul {
     display: flex;
     justify-content: center;
     gap: 20px 40px;
     flex-wrap: wrap;
 }
-
 .nav_mw ul li a {
     color: var(--light-content, #A7A7A7);
     font-family: DM Sans;
