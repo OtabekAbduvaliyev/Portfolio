@@ -18,8 +18,13 @@
 
 <body style="background: var(--dark-mode, #191919);">
     <header id="home">
-        <nav data-aos="fade-down" data-aos-duration="2000">
-            <div class="nav_mw">
+        <nav>
+            <div class="nav__mw">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn"></i>
+                    <i class="fas fa-times" id="cancel"></i>
+                </label>
                 <img src="./images/Remove-bg.ai_1694864329122.png" alt="" style="max-width: 95px;">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -49,14 +54,8 @@
             <img src="./images/vscode-icons_file-type-css.png" alt="">
             <img src="./images/vscode-icons_file-type-html.png" alt="">
             <img src="./images/akar-icons_github-fill.png" alt="">
-            <!-- <img src="./images/vscode-icons_file-type-js-official.png" alt=""> -->
             <img src="./images/vscode-icons_file-type-vscode (1).png" alt="">
-            <!-- <img src="./images/vscode-icons_file-type-tailwind.png" alt=""> -->
-            <!-- <img src="./images/logos_bootstrap.png" alt=""> -->
             <img src="./images/logos_git-icon.png" alt="">
-            <!-- <img src="./images/logos_react.png" alt=""> -->
-            <!-- <img src="./images/cib_greensock.png" alt=""> -->
-            <!-- <img src="./images/Vector.png" alt=""> -->
         </div>
     </aside>
     <section id="aboutme">
@@ -137,7 +136,7 @@
                     <a target="_blank" href="https://github.com/Sunside0/Yuk-tashish-xizamti">View Code</a>
                 </div>
             </div>
-            <div class="project1">
+            <div class="project1" data-aos="flip-left" data-aos-duration="1000" >
                 <img src="./images/bandicam 2023-09-18 19-45-02-501.jpg" alt="">
                 <p class="p1">Project Tile goes here</p>
                 <p class="p2">This is sample project description random things are here in description This is sample

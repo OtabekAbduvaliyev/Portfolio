@@ -6,51 +6,60 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.nav__mw{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.nav__mw ul{
+    float: right;
+}
+.nav__mw ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+.nav__mw ul li a{
+    position: relative;
+    color: var(--light-Content, #A7A7A7);
+text-align: center;
+padding: 5px 0px;
 
-nav {
-    padding: 10px;
+/* Buttons / Big */
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 130% */
+}
+.nav__mw ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0%;
+    bottom: 0;
+    height: 3px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--dark-mode, #191919);    z-index: 999;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav__mw ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
     color: white;
-    opacity: 0.8;
-
-}
-
-.nav_mw {
-    text-align: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 500px;
-    row-gap: 50px;
-}
-.icons{
-    font-size: 2.8rem;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
-.nav_mw ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px 40px;
-    flex-wrap: wrap;
+#check{
+    display: none;
 }
-.nav_mw ul li a {
-    color: var(--light-content, #A7A7A7);
-    font-family: DM Sans;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-}
-
 .myself p {
     align-items: center;
     color: #D9D9D9;
@@ -59,7 +68,6 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: 70px;
-    /* 120.69% */
     letter-spacing: -1px;
 }
 
@@ -79,26 +87,13 @@ nav {
 .myself {
     padding-top: 224px;
     max-width: 1100px;
+    width: 100%;
     margin: auto;
     display: flex;
-    column-gap: 119px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* column-gap: 119px; */
+    /* flex-wrap: wrap; */
 }
-
-@media screen and (max-width:1089px) {
-    .myself {
-        justify-content: center;
-    }
-
-    .myself p {
-        text-align: center;
-    }
-
-    .myself img {
-        margin-top: 90px;
-    }
-}
-
 aside {
     max-width: 1200px;
     margin: auto;
@@ -414,6 +409,66 @@ h4 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+@media (max-width:1118px){
+    .nav__mw img{
+        left: 8%;
+    }
+    .myself{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:860px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #13B0F5;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    .nav__mw ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .nav__mw img{
+        left: 6%;
+        top:20px;
+        width: 130px;
+    }
+    .nav__mw ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+@media screen and (max-width:1089px) {
+    .myself {
+        justify-content: center;
+    }
+
+    .myself p {
+        text-align: center;
+    }
+
+    .myself img {
+        margin-top: 90px;
     }
 }
 html {
