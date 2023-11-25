@@ -15,11 +15,11 @@ btn.addEventListener('click',()=>{
         mood.href = './white.css'
     }
 })
-// a.addEventListener('click',()=>{
-//     // for(let i =0; i < active.length; i++){
-//     //     active[i].classList.toggle('active')
-//     // }
-//     // active.forEach(()=>{
-//     //     active.classList.toggle('active')
-//     // })
-// })
+a.addEventListener('click',()=>{
+    for(let i = 0; i < active.length; i++){
+        active[i].classList.toggle('active')
+    }
+    // active.forEach(()=>{
+    //     active.classList.toggle('active')
+    // })
+})
