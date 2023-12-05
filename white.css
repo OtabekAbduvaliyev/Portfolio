@@ -9,6 +9,7 @@ body {
     background-color: white;
     max-width: 1200px;
     margin: auto;
+    transition: 1s;
 }
 nav .nav-wrapper{
     display: flex;
