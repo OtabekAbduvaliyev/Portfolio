@@ -19,6 +19,7 @@ nav .nav-wrapper{
     background-color: black;
     max-width: 1200px;
     margin: auto;
+    transition: 1s;
 }
 nav {
     position: fixed;
@@ -229,7 +230,6 @@ article {
     max-width: 370px;
     border-radius: 20px;
     background: #363636;
-    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
     padding-bottom: 25px;
 }
 
@@ -325,7 +325,7 @@ article {
 }
 #sun{
     color: white;
-    transition: .6s;
+    transition: 1s;
 }
 .contact2 span {
     background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
@@ -453,6 +453,17 @@ h4 {
     width: 373px;
     height: 260px;
 }
+.fot-btn a i{
+    color: white;
+}
+.infor-fot{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.infor-fot span{
+    font-size: 42px;
+}
 @media screen and (max-width:1113px) {
     nav ul li a{
         font-size: 20px;
@@ -533,12 +544,6 @@ h4 {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width:886px) {
-    /* .contact2 p{
-        display: flex;
-        flex-wrap: ;
-    } */
-}
 @media screen and (max-width:1089px) {
     .contact2 p{
         font-size: 40px;
@@ -567,6 +572,21 @@ h4 {
     }
     .buttons .btn-p{
         font-size: 30px;
+    }
+    .infor-fot span{ 
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:542px){
+    .infor-fot p{
+        margin: 0;
+        font-size: 20px;
+    }
+    .infor-fot{
+        margin: 0;
+    }
+    .none{
+        display: none;
     }
 }
 html {
