@@ -226,7 +226,7 @@ article {
 }
 
 .project1 {
-    margin-top: 90px;
+    margin-top: 50px;
     max-width: 370px;
     border-radius: 20px;
     background: #363636;
@@ -281,7 +281,14 @@ article {
     column-gap: 28px;
     row-gap: 30px;
 }
-
+.project-section1{
+    color: white;
+    font-family: Poppins;
+    font-size: 40px;
+}
+.plus-h1{
+    margin-top: 60px;
+}
 .contact1 {
     margin-bottom: 50px;
 }
