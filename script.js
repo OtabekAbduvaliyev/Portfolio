@@ -38,7 +38,7 @@ e.addEventListener('click',()=>{
     active.classList.toggle('active')
 })
 uzb.addEventListener("click",()=>{
-    window.location.href = "uzbek.html"
+    window.location.href = "Uzbek.html"
 })
 usa.addEventListener("click",()=>{
     window.location.href = "index.html"
