@@ -88,6 +88,19 @@ nav ul li a:hover:before{
     -webkit-text-fill-color: transparent;
     margin-left: 20px;
 }
+.lg-images{
+    position: fixed;
+    left: 96.3%;
+    top: 50%;
+    background: linear-gradient(45deg, #ca00a9, #30197d);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px 0px 0px 8px;
+}
+.lg-images img{
+    max-width: 30px;
+
+}
 .myself p {
     align-items: center;
     color: #D9D9D9;

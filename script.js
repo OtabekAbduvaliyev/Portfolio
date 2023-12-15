@@ -5,6 +5,8 @@ let b = document.querySelector('#b')
 let c = document.querySelector('#c')
 let d = document.querySelector('#d')
 let e = document.querySelector('#e')
+let usa = document.querySelector('#usa')
+let uzb = document.querySelector('#uzb')
 btn1.addEventListener('click',()=>{
     active.classList.toggle('active')
 })
@@ -34,4 +36,10 @@ d.addEventListener('click',()=>{
 })
 e.addEventListener('click',()=>{
     active.classList.toggle('active')
+})
+uzb.addEventListener("click",()=>{
+    window.location.href = "uzbek.html"
+})
+usa.addEventListener("click",()=>{
+    window.location.href = "index.html"
 })
