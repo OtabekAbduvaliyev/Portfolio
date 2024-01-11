@@ -112,7 +112,7 @@ nav ul li a:hover:before{
     letter-spacing: -1px;
 }
 
-.myself span {
+.myself .name-span {
     background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -133,7 +133,17 @@ nav ul li a:hover:before{
     justify-content: space-between;
     align-items: center;
 }
-
+.sec-text:before{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid purple;
+    animation: animate 4s steps(12) infinite;
+}
 
 aside {
     max-width: 1200px;
@@ -611,4 +621,12 @@ h4 {
 }
 html {
     scroll-behavior: smooth;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }

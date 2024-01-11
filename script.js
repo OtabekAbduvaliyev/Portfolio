@@ -7,39 +7,53 @@ let d = document.querySelector('#d')
 let e = document.querySelector('#e')
 let usa = document.querySelector('#usa')
 let uzb = document.querySelector('#uzb')
-btn1.addEventListener('click',()=>{
+btn1.addEventListener('click', () => {
     active.classList.toggle('active')
 })
 let btn = document.getElementById('sun')
-btn.addEventListener('click',()=>{
+btn.addEventListener('click', () => {
     let mood = document.getElementById('mood');
     btn.classList.toggle('fa-moon')
-    if(btn.classList.toggle("fa-sun")){
+    if (btn.classList.toggle("fa-sun")) {
         mood.href = './style.css';
     }
-    else{
+    else {
         mood.href = './white.css'
     }
 });
 
-a.addEventListener('click',()=>{
+a.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-b.addEventListener('click',()=>{
+b.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-c.addEventListener('click',()=>{
+c.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-d.addEventListener('click',()=>{
+d.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-e.addEventListener('click',()=>{
+e.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-uzb.addEventListener("click",()=>{
+uzb.addEventListener("click", () => {
     window.location.href = "Uzbek.html"
 })
-usa.addEventListener("click",()=>{
+usa.addEventListener("click", () => {
     window.location.href = "index.html"
 })
+let text = document.querySelector(".sec-text")
+let textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Web developer"
+    }, 0)
+    setTimeout(() => {
+        text.textContent = "Student"
+    }, 4000)
+    setTimeout(() => {
+        text.textContent = "Blogger"
+    }, 8000)
+}
+textLoad();
+setInterval(textLoad, 12000)
