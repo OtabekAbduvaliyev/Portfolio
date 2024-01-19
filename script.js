@@ -37,23 +37,3 @@ d.addEventListener('click', () => {
 e.addEventListener('click', () => {
     active.classList.toggle('active')
 })
-uzb.addEventListener("click", () => {
-    window.location.href = "Uzbek.html"
-})
-usa.addEventListener("click", () => {
-    window.location.href = "index.html"
-})
-let text = document.querySelector(".sec-text")
-let textLoad = () => {
-    setTimeout(() => {
-        text.textContent = "Web developer"
-    }, 0)
-    setTimeout(() => {
-        text.textContent = "Student"
-    }, 4000)
-    setTimeout(() => {
-        text.textContent = "Blogger"
-    }, 8000)
-}
-textLoad();
-setInterval(textLoad, 12000)
