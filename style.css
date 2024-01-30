@@ -165,7 +165,7 @@ aside {
     align-items: center;
     justify-content: center;
 }
-.aside_imgs i{
+.aside_imgs i, .tailwind{
     font-size: 100px;
 }
 .aside_imgs .fa-html5{
@@ -188,6 +188,12 @@ aside {
 }
 .fa-sass{
     color: rgb(180, 67, 86);
+}
+.fa-react{
+    color: #61DBFB;
+}
+.tailwind{
+    color: #06B6D4;
 }
 .aside_inf h1 {
     color: var(--solid-heading-dark-mode, #ffffff);
